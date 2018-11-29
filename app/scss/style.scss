@@ -1,0 +1,101 @@
+@import "mixins";
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(../img/deathstar.jpg);
+    padding: 0px;
+    font-size: 1.5rem;
+  }
+  
+  .turn {
+    width: 500px;
+    height: 80px;
+    text-align: center;
+    margin:auto;
+    line-height: 40px;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    padding:20px;
+    border-radius: 5px;
+    transform: perspective(300px) rotateX(25deg);
+  
+  }
+  
+  .box {
+    width: 300px;
+    height: 300px; 
+    position: relative;
+    margin: auto;
+    margin-bottom: 30px;
+   
+  }
+  
+  .box div {
+    width: 100px;
+    height:100px;
+    float: left;
+    display: inline-block;
+  
+  }
+  
+  #div1{
+    @include border;
+    border-top: none;
+    border-left: none;
+  }
+  
+  #div2{
+    @include border;
+    border-top: none;
+  }
+  
+  #div3{
+    @include border;
+    border-top: none;
+    border-right: none;
+  }
+  
+  #div4{
+    @include border;
+    border-left: none;
+  }
+  
+  #div5{
+    @include border;
+  }
+  
+  #div6{
+    @include border;
+    border-right: none;
+  }
+  
+  #div7 {
+    @include border;
+    border-bottom: none;
+    border-left: none; 
+  }
+  
+  #div8 {
+    @include border;
+    border-bottom: none;
+  }
+  
+  #div9 {
+    @include border;
+    border-bottom: none;
+    border-right: none;
+  }
+  
+  .player1 {
+    background: url('../img/republic.png');
+  }
+  
+  .player2{
+    background: url('../img/imperium.png');
+  }
+  
+  
+  .players {
+    margin-left: 10px;
+  }
+  
